@@ -3,12 +3,271 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Systeem in Balans</title>
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async>
+        </script>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+                <div class="container">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">Systeem in Balans</a>
+
+                    <!-- Hamburger menu button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto me-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="onze-diensten.html">Onze Diensten</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="onze-visie.html">Onze Visie</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="over-mij.html">Over Mij</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="btn btn-secondary" href="contact.html">Maak een afspraak</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>
+                    Systeem in Balans
+                </h1>
+                <h2>
+                    Hulp op maat van gezinnen, teams en individuen
+                    onder de vorm van Coaching en/of Klinische Orthopedagogiek.
+                </h2>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a class="btn btn-primary" href="#diensten">Onze diensten</a>
+                    <a class="btn btn-secondary" href="contact.html">Maak een afspraak</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/systeem-in-balans.jpg" alt="Hero Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Diensten Section -->
+    <section id="diensten" class="container my-5">
+        <h2 class="mb-4">Onze Diensten</h2>
+        <!-- Masonry grid -->
+        <div class="row row-cols-1 row-cols-md-2 g-4" data-masonry='{"percentPosition": true}'>
+
+            <!-- Card voor Begeleiding voor jongeren en kinderen -->
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="images/systeem-in-balans-begeleiding-voor-jongeren-en-kinderen.jpg"
+                                class="img-fluid rounded-start"
+                                alt="systeem-in-balans-begeleiding-voor-jongeren-en-kinderen">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Begeleiding voor jongeren en kinderen</h5>
+                                <p class="card-text">Vaak zijn kinderen en jongeren het slachtoffer voor, tijdens en na
+                                    een
+                                    echtscheiding of het uiteengaan van hun ouders. Wij bieden de ruimte om zich te
+                                    uiten en
+                                    manieren te vinden om alles een plaats te geven.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Tarieven:</li>
+                                    <li class="list-group-item">Intake gesprek: 50 EUR</li>
+                                    <li class="list-group-item">Groepssessie: op aanvraag</li>
+                                    <li class="list-group-item">Individueel gesprek (Orthopedagoog): 70 EUR</li>
+                                    <li class="list-group-item">Individueel gesprek (Coach): 60 EUR</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card voor Workshops voor gescheiden ouders -->
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="images/systeem-in-balans-workshops-voor-gescheiden-ouders.jpg"
+                                class="img-fluid rounded-start" alt="workshops-voor-gescheiden-ouders">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Workshops voor gescheiden ouders</h5>
+                                <p class="card-text">Samen staan we sterker! Ook al heb je besloten een punt te zetten
+                                    achter
+                                    jullie relatie, de kinderen blijven van jullie beide. Hoe kunnen we ervoor zorgen
+                                    dat zij
+                                    een liefdevolle thuis blijven krijgen en ook zij gehoord worden.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Tarieven:</li>
+                                    <li class="list-group-item">Workshop tarief: op aanvraag</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card voor Coaching voor professionelen -->
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="images/systeem-in-balans-coaching-voor-professionelen.jpg"
+                                class="img-fluid rounded-start" alt="coaching-voor-professionelen">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Coaching voor professionelen</h5>
+                                <p class="card-text">
+                                    Loop je met het gevoel dat je meer in je marge hebt op je werk maar voel je
+                                    je geremd om dit te uiten? Denk je na over je volgende stap in je carrière en stel
+                                    je
+                                    het
+                                    steeds uit om er mee aan de slag te gaan? Krijg je steeds opnieuw dezelfde feedback
+                                    op
+                                    je
+                                    werk of van klanten en wil je hier iets mee doen? Dan is ons coaching aanbod iets
+                                    voor
+                                    jou.
+                                    Jij hebt de kracht om hiermee aan de slag te gaan. Wij geven jou die extra push om
+                                    jezelf
+                                    verder te ontplooien.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Tarieven:</li>
+                                    <li class="list-group-item">Coaching sessie tarief: op aanvraag</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card voor Mentoring, Coaching en workshops voor bedrijven en organisaties -->
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="images/systeem-in-balans-mentoring-coaching-en-workshops-voor-bedrijven-en-organisaties.jpg"
+                                class="img-fluid rounded-start"
+                                alt="mentoring-coaching-en-workshops-voor-bedrijven-en-organisaties">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Mentoring, Coaching en workshops voor bedrijven</h5>
+                                <p class="card-text">
+                                    Als organisatie of bedrijf inzetten op de ontwikkeling van je personeel kan
+                                    door het opzetten van een intern mentoring en coaching programma. Wij helpen je
+                                    graag om
+                                    de
+                                    eerste stappen te zetten. Je ervaren werknemers worden opnieuw gewaardeerd voor hun
+                                    kennis
+                                    en kunnen deze doorgeven aan nieuwe werknemers. Of zie je meer baat bij generational
+                                    mentoring, en zie je baat bij hoe jongere werknemers de oudere garde de nieuwigheden
+                                    kunnen
+                                    bijbrengen? Dat kan ook.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Tarieven:</li>
+                                    <li class="list-group-item">Coaching sessie tarief: op aanvraag</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="diensten" class="container my-5">
+        <h2 class="mb-4">Contact</h2>
+        <div class="row">
+            <!-- Contact Form (Iframe) -->
+            <div class="col-md-8">
+                <div class="w-100">
+                    <div class="container" id="ff-compose"></div>
+                </div>
+            </div>
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <p>Guido Gezellestraat 10, 3290 Diest</p>
+                <p>Email: wietvandormael@gmail.com</p>
+                <p>Phone: 0474 754 430</p>
+                <p>KBO Number: 1001.367.028</p>
+                <p>Bank Account: BE46 0019 6249 7936</p>
+
+                <!-- Social Links -->
+                <div>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a><br>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script async defer
+        src="https://formfacade.com/include/103784533357298304717/form/1FAIpQLSfoG7gD96EcT2dCSNWzJJilXpxSa695O7J3v2RXg8Q5rQp6wQ/clean.js?div=ff-compose">
+        </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let prevScrollPos = window.pageYOffset;
+
+            window.onscroll = function () {
+                let currentScrollPos = window.pageYOffset;
+                const navbar = document.querySelector(".navbar");
+
+                if (currentScrollPos < prevScrollPos) {
+                    navbar.style.top = "0";
+                } else {
+                    navbar.style.top = "-50px"; // Adjust this value based on the height of your navbar
+                }
+
+                prevScrollPos = currentScrollPos;
+            };
+        });
+
+    </script>
+
 </body>
 
 </html>
