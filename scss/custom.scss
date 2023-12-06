@@ -1,11 +1,52 @@
 @import 'custom-variables';
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Define keyframes
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .card {
     img {
         height: 100%;
         object-fit: cover;
     }
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    // left: 5px;
+    // right: 5px;
+    // margin: 0 auto;
+    // width: calc(100% - 10px);
+    // box-sizing: border-box;
+    // border-radius: 18px;
+    border: 0.5px solid #d8d8d8;
+    // background-color: rgba(255, 255, 255, 0.5);
+    // overflow: hidden;
+    // padding: 21px;
+    // font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    //     helvetica neue, helvetica, 'sans-serif';
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px) saturate(2);
+    animation: fadeIn 1500ms;
+    transition: width 1500ms, height 1500ms;
+}
+
+#cookie-banner button {
+    margin-left: 10px;
+}
+
+.ff-form .ff-powered-img img {
+    width: 1px !important;
+    height: 1px !important;
 }
 
 .navbar {

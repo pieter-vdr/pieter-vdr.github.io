@@ -11855,9 +11855,35 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .card img {
   height: 100%;
   object-fit: cover;
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 10px;
+  border: 0.5px solid #d8d8d8;
+  backdrop-filter: blur(5px) saturate(2);
+  animation: fadeIn 1500ms;
+  transition: width 1500ms, height 1500ms;
+}
+
+#cookie-banner button {
+  margin-left: 10px;
+}
+
+.ff-form .ff-powered-img img {
+  width: 1px !important;
+  height: 1px !important;
 }
 
 .navbar {
