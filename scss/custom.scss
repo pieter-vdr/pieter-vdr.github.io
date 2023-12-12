@@ -15,6 +15,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
+    text-wrap: balance;
+    animation: fadeIn 1500ms;
+    transition: width 1500ms, height 1500ms;
+}
+
+.btn {
+    --bs-border-opacity: .1;
 }
 
 .card {
@@ -27,18 +34,6 @@ body {
 #cookie-banner {
     position: fixed;
     bottom: 10px;
-    // left: 5px;
-    // right: 5px;
-    // margin: 0 auto;
-    // width: calc(100% - 10px);
-    // box-sizing: border-box;
-    // border-radius: 18px;
-    // background-color: rgba(255, 255, 255, 0.5);
-    // overflow: hidden;
-    // padding: 21px;
-    // font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    //     helvetica neue, helvetica, 'sans-serif';
-    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px) saturate(2);
     animation: fadeIn 1500ms;
     transition: width 1500ms, height 1500ms;
@@ -48,12 +43,36 @@ body {
     margin-left: 10px;
 }
 
-.ff-powered-img>img {
-    /* Your styles here */
-    display: none !important;
-    height: 1px !important;
-    width: 1px !important;
-    border: 10px solid red !important;
+.mark-primary {
+    position: relative;
+}
+
+.mark-primary::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 90%;
+    height: 60%;
+    background-color: #cce1d476;
+    border-radius: 2px;
+    z-index: -1;
+}
+
+.mark-secondary {
+    position: relative;
+}
+
+.mark-secondary::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 90%;
+    height: 60%;
+    background-color: #ffe5c06d;
+    border-radius: 2px;
+    z-index: -1;
 }
 
 .navbar {
