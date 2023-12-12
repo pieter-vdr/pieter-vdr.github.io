@@ -7,6 +7,10 @@
     <title>Systeem in Balans</title>
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async>
@@ -18,10 +22,13 @@
 
     <header class="container">
         <div class="row">
-            <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom shadow-sm">
+            <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom shadow-sm border border-light">
                 <div class="container">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="#">Systeem in Balans</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/systeem-in-balans-bw.png" alt="systeem-in-balans-logo" width="30" height="30"
+                            class="d-inline-block align-top">
+                        Systeem in Balans</a>
 
                     <!-- Hamburger menu button -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,7 +51,8 @@
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="btn btn-primary rounded-3 shadow-sm" href="index.html#contact">Stel je
+                                <a class="btn btn-secondary rounded-3 shadow-sm border border-secondary"
+                                    href="index.html#contact">Stel je
                                     vraag</a>
                             </li>
                         </ul>
@@ -59,39 +67,36 @@
 
     <section class="container my-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12">
                 <!-- <h1 class="mb-4">
                     Systeem in Balans
                 </h1> -->
                 <h2>
                     Coaching en begeleiding <br>
-                </h2>
-                <h4>
-                    van gezinnen, teams en individuen
-                </h4>
-                <h6>
+                    van gezinnen, teams en individuen<br>
                     onder de vorm van Klinische Orthopedagogiek.
-                </h6>
+                </h2>
                 <div class="d-flex justify-content-center justify-content-lg-start my-4">
-                    <a class="btn btn-secondary btn-lg me-4 rounded-3 shadow-sm" href="#diensten">Onze diensten</a>
-                    <a class="btn btn-primary btn-lg rounded-3 shadow-sm" href="index.html#contact">Maak een
+                    <a class="btn btn-secondary btn-lg me-4 rounded-3 shadow-sm border border-secondary"
+                        href="#diensten">Onze diensten</a>
+                    <a class="btn btn-primary btn-lg rounded-3 shadow-sm border border-primary"
+                        href="index.html#contact">Maak een
                         afspraak</a>
                 </div>
             </div>
-            <div class="col-md-6 py-4 pe-4">
-                <img src="images/systeem-in-balans.jpg" alt="Hero Image" class="img-fluid rounded-4 shadow">
+            <div class="col-lg-6 py-4 pe-4 d-none d-lg-block align-items-center">
+                <img src="images/systeem-in-balans.jpg" alt="Hero Image" class="img-fluid rounded-4 shadow ">
             </div>
         </div>
     </section>
-
 
     <!-- Diensten Section -->
 
     <section id="diensten">
         <div class="container my-5">
-            <h2 class="mb-4">Onze Diensten</h2>
+            <h2>Onze Diensten</h2>
             <!-- Masonry grid -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-masonry='{"percentPosition": true}'>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3" data-masonry='{"percentPosition": true}'>
 
                 <!-- Card voor Begeleiding voor jongeren en kinderen -->
                 <div class="col">
@@ -144,11 +149,10 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Workshops voor gescheiden ouders</h5>
-                                    <p class="card-text">Samen staan we sterker! Ook al heb je besloten een punt te
-                                        zetten
-                                        achter jullie relatie, de kinderen blijven van jullie beide. Het is van
+                                    <p class="card-text">Ook na een relatiebreuk blijft het van
                                         essentieel
-                                        belang om ervoor te zorgen dat zij een liefdevolle thuis blijven krijgen en dat
+                                        belang om ervoor te zorgen dat je kinderen een liefdevolle thuis blijven krijgen
+                                        en dat
                                         ook
                                         hun stem gehoord wordt.</p>
                                     <p class="card-text">Tijdens groepssessies, begeleid door een klinisch
@@ -192,7 +196,10 @@
                                     </p>
                                     <p class="card-text">
                                         Tijdens onze coachingsessies bieden we je tools die je helpen je
-                                        leiderschapscapaciteiten te ontwikkelen. We helpen je het beste in jezelf naar
+                                        leiderschapscapaciteiten te ontwikkelen.
+                                    </p>
+                                    <p>
+                                        We helpen je het beste in jezelf naar
                                         boven
                                         te halen om zo je professionele doelen te bereiken.
                                     </p>
@@ -268,41 +275,72 @@
 
 
     <!-- Contact Section -->
+    <section id="contact">
+        <div class="container my-5">
+            <h2 class=" mb-4">Contact</h2>
+            <div class="row bg-secondary rounded-4 shadow">
+                <!-- Contact Form (Iframe) -->
+                <div class="col-lg-8">
+                    <div class="row my-5 ">
+                        <h4>Hoe kunnen we je helpen?</h4>
+                        <p>
+                            Eender welke vraag je ook hebt,
+                            we zijn steeds geinterresserd om je verhaal te horen.
+                            <br>
+                            Bij een eerste contact geven we je ons beste advies, zonder verplichtingen van jouw
+                            kant.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <!-- <div class="container" id="ff-compose"></div> -->
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <label for="first-name" class="form-label">Voornaam *</label>
+                                    <input type="text" class="form-control mb-3" id="first-name" name="first-name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="last-name" class="form-label">Naam</label>
+                                    <input type="text" class="form-control mb-3" id="last-name" name="last-name">
+                                </div>
 
-    <section id="contact" class="container my-4">
-        <h2>Contact</h2>
-        <div class="row bg-secondary rounded-4 shadow">
-            <!-- Contact Form (Iframe) -->
-            <div class="col-md-8">
-                <div class="row bg-light rounded-4 shadow bg-opacity-50 p-2 m-5">
-                    <h4>Hoe kunnen we je helpen?</h4>
-                    <p>
-                        Eender welke vraag je hebt,
-                        we zijn steeds geinterresserd om je verhaal te horen.
-                        <br>
-                        Bij een eerste contact geven we je ons beste advies, zonder enige verplichtingen van jouw
-                        kant.
-                    </p>
-                </div>
-                <div class="row">
-                    <div>
-                        <div class="container" id="ff-compose"></div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mailadres *</label>
+                                    <input type="email" class="form-control mb-3" id="email" name="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefoon</label>
+                                    <input type="tel" class="form-control mb-3" id="phone" name="phone">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Bericht *</label>
+                                    <textarea class="form-control mb-3" id="message" name="message" rows="4"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mb-5 ">Verstuur</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Contact Information -->
-            <div class="col-md-3 bg-light rounded-4 shadow bg-opacity-50 p-2 m-5">
-                <p>Guido Gezellestraat 10, 3290 Diest</p>
-                <p>Email: wietvandormael@gmail.com</p>
-                <p>Phone: 0474 754 430</p>
-                <p>KBO Nummer: 1001.367.028</p>
-                <p>BE46 0019 6249 7936</p>
+                <!-- Contact Information -->
+                <div class="col-lg-3 p-2 m-5">
+                    <h4>Contactgegevens</h4>
+                    <p>Guido Gezellestraat 10, 3290 Diest</p>
+                    <p>Email: wietvandormael@gmail.com</p>
+                    <p>Phone: 0474 754 430</p>
+                    <p>KBO Nummer: 1001.367.028</p>
+                    <p>BE46 0019 6249 7936</p>
 
-                <!-- Social Links -->
-                <div class="d-flex">
-                    <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
-                    <a href="https://www.twitter.com" target="_blank">Twitter</a><br>
-                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <!-- Social Links -->
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a><br>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -311,21 +349,21 @@
 
     <!-- Footer -->
 
-    <footer class="bg-light">
+    <footer class="bg-light shadow-lg border-top  border-primary">
         <div class="container">
             <div class="row d-flex justify-content-between p-4">
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <h5>Systeem in Balans</h5>
                     <p>KBO nummer:<br>1001.367.028</p>
                     <p>Bankrekening nummer:<br>BE46 0019 6249 7936</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <h5>Contact</h5>
                     <p><i class="fas fa-home"></i>Guido Gezellestraat 10, 3290 Diest</p>
                     <p><i class="fas fa-envelope"></i> wietvandormael@gmail.com</p>
                     <p><i class="fas fa-phone"></i> 0474 754 430</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li class="nav-item">
@@ -339,7 +377,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <h5>Volg ons</h5>
                     <ul class="list-unstyled d-flex">
                         <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
@@ -352,21 +390,20 @@
     </footer>
 
 
-
     <!-- Cookie Banner -->
 
-    <div class="d-flex align-items-center justify-content-center">
-        <div id="cookie-banner" class="rounded-4 shadow p-4 bg-white bg-opacity-75">
-            <p>We gebruiken cookies</p>
-            <p>Door op "Alles accepteren" te klikken, gaat u akkoord met het opslaan van cookies op uw apparaat</br>
-                voor functionele en analytische doeleinden.</p>
+    <!-- <div class="d-flex align-items-center justify-content-center">
+        <div id="cookie-banner" class="rounded-4 shadow p-4 bg-white bg-opacity-75 w-75">
+            <p>We gebruiken cookies voor functionele en analytische doeleinden.</p>
+            <P>Door op "Alles accepteren" te klikken, gaat u akkoord met het opslaan van cookies op uw apparaat.</P>
             <button class="btn btn-light" onclick="acceptCookies()">Alles accepteren</button>
         </div>
-    </div>
-
+    </div> -->
+    <!-- 
     <script async defer
         src="https://formfacade.com/include/103784533357298304717/form/1FAIpQLSfoG7gD96EcT2dCSNWzJJilXpxSa695O7J3v2RXg8Q5rQp6wQ/clean.js?div=ff-compose">
-        </script>
+    </script> -->
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let prevScrollPos = window.pageYOffset;
