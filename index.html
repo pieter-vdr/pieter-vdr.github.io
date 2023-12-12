@@ -415,7 +415,8 @@
                 if (currentScrollPos < prevScrollPos) {
                     navbar.style.top = "0";
                 } else {
-                    navbar.style.top = "-60px"; // Adjust this value based on the height of your navbar
+                    // navbar.style.top = "-60px"; // Adjust this value based on the height of your navbar
+                    navbar.style.top = currentScrollPos < prevScrollPos || currentScrollPos < 56 ? "0" : "-60px";
                 }
 
                 prevScrollPos = currentScrollPos;
