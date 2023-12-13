@@ -11929,10 +11929,10 @@ body {
   animation: fadeIn 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
 }
 
-#teams, .mark-secondary, .mark-primary, #individuen {
+#teams, #individuen, .mark-secondary, .mark-primary {
   position: relative;
 }
-#teams::before, .mark-secondary::before, .mark-primary::before, #individuen::before {
+#teams::before, #individuen::before, .mark-secondary::before, .mark-primary::before {
   content: "";
   position: absolute;
   bottom: 6px;
@@ -11943,7 +11943,7 @@ body {
   z-index: -1;
 }
 
-.mark-primary::before, #individuen::before {
+.mark-primary::before {
   background-color: rgba(204, 225, 212, 0.462745098);
   /* Primary background color */
   animation: highlightText 300ms ease-out 2000ms forwards;
@@ -11956,8 +11956,19 @@ body {
   /* Adjust the delay for secondary */
 }
 
+.icon {
+  max-height: 1em;
+}
+
+#individuen::before {
+  background-color: rgba(204, 225, 212, 0.462745098);
+  /* Secondary background color for teams */
+  animation: highlightText 300ms ease-out 5000ms forwards;
+  /* Adjust the delay for teams */
+}
+
 #teams::before {
-  background-color: rgba(255, 229, 192, 0.4274509804);
+  background-color: rgba(204, 225, 212, 0.462745098);
   /* Secondary background color for teams */
   animation: highlightText 300ms ease-out 4000ms forwards;
   /* Adjust the delay for teams */

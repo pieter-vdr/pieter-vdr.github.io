@@ -115,15 +115,26 @@ body {
     }
 }
 
+.icon {
+    max-height: 1em;
+}
+
 #individuen {
-    @extend .mark-primary;
+    @extend %mark-base;
+
+    &::before {
+        background-color: #cce1d476;
+        /* Secondary background color for teams */
+        animation: highlightText 300ms ease-out 5000ms forwards;
+        /* Adjust the delay for teams */
+    }
 }
 
 #teams {
     @extend %mark-base;
 
     &::before {
-        background-color: #ffe5c06d;
+        background-color: #cce1d476;
         /* Secondary background color for teams */
         animation: highlightText 300ms ease-out 4000ms forwards;
         /* Adjust the delay for teams */
