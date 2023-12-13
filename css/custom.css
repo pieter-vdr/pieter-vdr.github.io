@@ -36,7 +36,7 @@
   --bs-warning: #fbda16;
   --bs-danger: #fe4048;
   --bs-light: #f2ecea;
-  --bs-dark: #272728;
+  --bs-dark: #985D46;
   --bs-primary-rgb: 204, 225, 212;
   --bs-secondary-rgb: 255, 229, 192;
   --bs-success-rgb: 30, 228, 120;
@@ -44,7 +44,7 @@
   --bs-warning-rgb: 251, 218, 22;
   --bs-danger-rgb: 254, 64, 72;
   --bs-light-rgb: 242, 236, 234;
-  --bs-dark-rgb: 39, 39, 40;
+  --bs-dark-rgb: 152, 93, 70;
   --bs-primary-text-emphasis: #525a55;
   --bs-secondary-text-emphasis: #665c4d;
   --bs-success-text-emphasis: #0c5b30;
@@ -2028,14 +2028,14 @@ progress {
 
 .table-dark {
   --bs-table-color: #fff2ee;
-  --bs-table-bg: #272728;
-  --bs-table-border-color: #525050;
-  --bs-table-striped-bg: #323132;
+  --bs-table-bg: #985D46;
+  --bs-table-border-color: #ad7b68;
+  --bs-table-striped-bg: #9d644e;
   --bs-table-striped-color: #fff2ee;
-  --bs-table-active-bg: #3d3b3c;
-  --bs-table-active-color: #fff2ee;
-  --bs-table-hover-bg: #373637;
-  --bs-table-hover-color: #fff2ee;
+  --bs-table-active-bg: #a26c57;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #a06853;
+  --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
@@ -3084,19 +3084,19 @@ textarea.form-control-lg {
 
 .btn-dark {
   --bs-btn-color: #fff2ee;
-  --bs-btn-bg: #272728;
-  --bs-btn-border-color: #272728;
-  --bs-btn-hover-color: #fff2ee;
-  --bs-btn-hover-bg: #474748;
-  --bs-btn-hover-border-color: #3d3d3e;
-  --bs-btn-focus-shadow-rgb: 71, 69, 70;
-  --bs-btn-active-color: #fff2ee;
-  --bs-btn-active-bg: #525253;
-  --bs-btn-active-border-color: #3d3d3e;
+  --bs-btn-bg: #985D46;
+  --bs-btn-border-color: #985D46;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #a77562;
+  --bs-btn-hover-border-color: #a26d59;
+  --bs-btn-focus-shadow-rgb: 167, 115, 95;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ad7d6b;
+  --bs-btn-active-border-color: #a26d59;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff2ee;
-  --bs-btn-disabled-bg: #272728;
-  --bs-btn-disabled-border-color: #272728;
+  --bs-btn-disabled-bg: #985D46;
+  --bs-btn-disabled-border-color: #985D46;
 }
 
 .btn-outline-primary {
@@ -3219,19 +3219,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  --bs-btn-color: #272728;
-  --bs-btn-border-color: #272728;
+  --bs-btn-color: #985D46;
+  --bs-btn-border-color: #985D46;
   --bs-btn-hover-color: #fff2ee;
-  --bs-btn-hover-bg: #272728;
-  --bs-btn-hover-border-color: #272728;
-  --bs-btn-focus-shadow-rgb: 39, 39, 40;
+  --bs-btn-hover-bg: #985D46;
+  --bs-btn-hover-border-color: #985D46;
+  --bs-btn-focus-shadow-rgb: 152, 93, 70;
   --bs-btn-active-color: #fff2ee;
-  --bs-btn-active-bg: #272728;
-  --bs-btn-active-border-color: #272728;
+  --bs-btn-active-bg: #985D46;
+  --bs-btn-active-border-color: #985D46;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #272728;
+  --bs-btn-disabled-color: #985D46;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #272728;
+  --bs-btn-disabled-border-color: #985D46;
   --bs-gradient: none;
 }
 
@@ -6865,8 +6865,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-dark:hover, .link-dark:focus {
-  color: RGBA(31, 31, 32, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(31, 31, 32, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(122, 74, 56, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(122, 74, 56, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -11867,8 +11867,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin-top: 50px;
   text-wrap: balance;
-  animation: fadeIn 1500ms;
-  transition: width 1500ms, height 1500ms;
 }
 
 .btn {
@@ -11880,53 +11878,111 @@ body {
   object-fit: cover;
 }
 
+#card-1 {
+  opacity: 0;
+  /* easeInSine */
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 750ms forwards;
+}
+
+#card-2 {
+  opacity: 0;
+  /* easeInSine */
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 1000ms forwards;
+}
+
+#card-3 {
+  opacity: 0;
+  /* easeInSine */
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 1250ms forwards;
+}
+
+#card-4 {
+  opacity: 0;
+  /* easeInSine */
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 1500ms forwards;
+}
+
+#card-5 {
+  opacity: 0;
+  /* easeInSine */
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 1750ms forwards;
+}
+
 #cookie-banner {
   position: fixed;
   bottom: 10px;
   backdrop-filter: blur(5px) saturate(2);
-  animation: fadeIn 1500ms;
-  transition: width 1500ms, height 1500ms;
+  animation: fadeIn 1350ms;
 }
 
 #cookie-banner button {
   margin-left: 10px;
 }
 
-.mark-primary {
-  position: relative;
+#diensten {
+  opacity: 0;
+  animation: fadeIn 350ms cubic-bezier(0.47, 0, 0.745, 0.715) 500ms forwards;
 }
 
-.mark-primary::before {
+#header-image {
+  opacity: 0;
+  animation: fadeIn 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+
+#teams, .mark-secondary, .mark-primary, #individuen {
+  position: relative;
+}
+#teams::before, .mark-secondary::before, .mark-primary::before, #individuen::before {
   content: "";
   position: absolute;
   bottom: 6px;
   left: 0;
-  width: 90%;
+  width: 0;
   height: 60%;
-  background-color: rgba(204, 225, 212, 0.462745098);
   border-radius: 2px;
   z-index: -1;
 }
 
-.mark-secondary {
-  position: relative;
+.mark-primary::before, #individuen::before {
+  background-color: rgba(204, 225, 212, 0.462745098);
+  /* Primary background color */
+  animation: highlightText 300ms ease-out 2000ms forwards;
 }
 
 .mark-secondary::before {
-  content: "";
-  position: absolute;
-  bottom: 6px;
-  left: 0;
-  width: 90%;
-  height: 60%;
   background-color: rgba(255, 229, 192, 0.4274509804);
-  border-radius: 2px;
-  z-index: -1;
+  /* Secondary background color */
+  animation: highlightText 300ms ease-out 3000ms forwards;
+  /* Adjust the delay for secondary */
 }
 
+#teams::before {
+  background-color: rgba(255, 229, 192, 0.4274509804);
+  /* Secondary background color for teams */
+  animation: highlightText 300ms ease-out 4000ms forwards;
+  /* Adjust the delay for teams */
+}
+
+@keyframes highlightText {
+  to {
+    width: 90%;
+  }
+}
+@keyframes highlightText {
+  to {
+    width: 90%;
+  }
+}
 .navbar {
   position: fixed;
   transition: top 0.3s;
+}
+
+#subtext {
+  opacity: 0;
+  /* ease-out */
+  /* easeInSine */
+  animation: fadeIn 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
 }
 
 @media (max-width: 991.98px) {
