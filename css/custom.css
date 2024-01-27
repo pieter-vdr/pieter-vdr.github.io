@@ -11864,18 +11864,74 @@ textarea.form-control-lg {
   }
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-top: 50px;
   text-wrap: balance;
+  color: #1c2945;
+}
+body a {
+  text-decoration: none;
+}
+
+li {
+  list-style: circle;
+  margin-bottom: 1em;
+}
+
+.footer-links {
+  list-style: none;
+}
+.footer-links li {
+  list-style: none;
+}
+
+h1, .h1 {
   color: #3C64B9;
 }
 
-.navbar-brand {
-  color: #FCFDFE;
+h2, .h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  color: #3C64B9;
+  font-family: "Work Sans", sans-serif;
 }
 
+h2, .h2,
+h3,
+.h3 {
+  display: inline-block;
+  border-bottom: 1px solid #3498db;
+  margin-bottom: 1em;
+  padding-bottom: 0.2em;
+}
+h2.no-underline, .no-underline.h2,
+h3.no-underline,
+.no-underline.h3 {
+  border-bottom: none;
+}
+
+h4, .h4 {
+  color: #1c2945;
+  text-wrap: pretty;
+}
+
+.navbar-brand {
+  color: #1c2945;
+}
+
+#navbarNav .navbar-nav .nav-item {
+  list-style: none;
+}
 #navbarNav .navbar-nav .nav-item .nav-link {
   color: #1c2945;
+}
+
+nav-item {
+  list-style: none;
 }
 
 .btn {
