@@ -11865,7 +11865,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Nunito", sans-serif;
-  margin-top: 50px;
+  margin-top: 4em;
   text-wrap: balance;
   color: #1c2945;
 }
@@ -11921,6 +11921,20 @@ h4, .h4 {
 
 .navbar-brand {
   color: #1c2945;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  font-size: 1em;
+  white-space: normal;
+}
+
+.navbar-brand {
+  /* padding-top: var(--bs-navbar-brand-padding-y); */
+  /* padding-bottom: var(--bs-navbar-brand-padding-y); */
+  /* margin-right: var(--bs-navbar-brand-margin-end); */
+  font-size: var(--bs-navbar-brand-font-size);
+  color: var(--bs-navbar-brand-color);
+  text-decoration: none;
+  /* white-space: nowrap; */
 }
 
 #navbarNav .navbar-nav .nav-item {
