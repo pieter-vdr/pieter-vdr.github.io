@@ -14,6 +14,30 @@
 </head>
 
 <body>
+
+     <!-- Modal -->
+    
+    <div class="modal fade" id="patientStopModal" tabindex="-1" aria-labelledby="patientStopModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="patientStopModalLabel">PATIËNTENSTOP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Om goede zorg te kunnen blijven bieden aan onze huidige patiënten zien wij ons genoodzaakt om een tijdelijke patiëntenstop in te voeren.
+                    <br><br>
+                    Onze oprechte excuses, dank voor uw begrip.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Header -->
 
     <header>
@@ -255,6 +279,12 @@
         function acceptCookies() {
             document.getElementById('cookie-banner').style.display = 'none';
         }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#patientStopModal').modal('show');
+        });
     </script>
 
 </body>
