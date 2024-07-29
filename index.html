@@ -11,20 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 </head>
 
 <body>
 
-     <!-- Modal -->
+<!-- Modal -->
     
     <div class="modal fade" id="patientStopModal" tabindex="-1" aria-labelledby="patientStopModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="patientStopModalLabel">PATIËNTENSTOP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     Om goede zorg te kunnen blijven bieden aan onze huidige patiënten zien wij ons genoodzaakt om een tijdelijke patiëntenstop in te voeren.
@@ -32,7 +31,7 @@
                     Onze oprechte excuses, dank voor uw begrip.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
                 </div>
             </div>
         </div>
@@ -281,9 +280,11 @@
         }
     </script>
 
+        <!-- Script to show the modal on page load -->
     <script>
-        $(document).ready(function(){
-            $('#patientStopModal').modal('show');
+        document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('patientStopModal'));
+            myModal.show();
         });
     </script>
 
