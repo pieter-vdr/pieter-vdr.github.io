@@ -337,6 +337,21 @@
     });
 </script>
 
+<script>
+    function openVaccinatieInfo() {
+        // Verwijzing naar de uitklapbare sectie
+        var infoSection = document.getElementById('vaccinatieInfo');
+
+        // Controleer of de sectie niet al is geopend
+        if (!infoSection.classList.contains('show')) {
+            // Open de uitklapbare sectie
+            var collapse = new bootstrap.Collapse(infoSection, {
+                toggle: true
+            });
+        }
+    }
+</script>
+
 </body>
 
 </html>
