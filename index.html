@@ -36,6 +36,7 @@
                 <br><br>
                 <!-- Link naar de sectie op de indexpagina met modal sluit functie -->
                 <a href="#vaccinatie" class="text-primary" data-bs-dismiss="modal" onclick="openVaccinatieInfo()">Meer infooo</a>
+                <a href="#vaccinatie" class="text-primary" onclick="closeModalAndOpenSection()">Meer info</a>
             </div>
             <div class="modal-footer">
                 <button type="button" href="#vaccinatie" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
@@ -338,6 +339,17 @@
 </script>
 
 <script>
+    function closeModalAndOpenSection() {
+        // Sluit de modal
+        var modal = bootstrap.Modal.getInstance(document.getElementById('patientStopModal'));
+        modal.hide();
+
+        // Gebruik een kleine vertraging om de collapse te openen nadat de modal is gesloten
+        setTimeout(function () {
+            openVaccinatieInfo();
+        }, 300); // 300ms vertraging
+    }
+
     function openVaccinatieInfo() {
         // Verwijzing naar de uitklapbare sectie
         var infoSection = document.getElementById('vaccinatieInfo');
