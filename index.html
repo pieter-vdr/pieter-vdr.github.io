@@ -35,17 +35,18 @@
             <div class="modal-body">
                 Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren op speciaal daarvoor bestemde momenten tussen 14 en 31 oktober.
                 <br><br>
-                <!-- Link naar de sectie op de indexpagina met modal sluit functie -->
-                <a href="#vaccinatie" class="text-primary" onclick="closeModalAndOpenSection()">Meer info</a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+                <!-- Flex container to align link and button -->
+                <div class="d-flex justify-content-between">
+                    <!-- Link on the left -->
+                    <a href="#vaccinatie" class="text-primary" onclick="closeModalAndOpenSection()">Meer info</a>
+                    
+                    <!-- Button on the right -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- Header -->
 
@@ -121,7 +122,7 @@
 <section id="vaccinatie" class="container my-5">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="mb-3">Griep- en COVID vaccinatie 2024 praktijk Hoekstra Teuwen</h2>
+            <h2 class="mb-3">Griep- en COVID vaccinatie 2024 </h2>
             <p>Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren op speciaal daarvoor bestemde momenten tussen 14 en 31 oktober.</p>
             
             <!-- Uitklapbare sectie -->
