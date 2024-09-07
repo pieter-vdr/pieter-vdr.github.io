@@ -34,8 +34,8 @@
                 <h5>Griep- en COVID vaccinatie 2024 praktijk Hoekstra Teuwen</h5>
                 Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren op speciaal daarvoor bestemde momenten tussen 14 en 31 oktober.
                 <br><br>
-                <!-- Link naar de sectie op de indexpagina -->
-                <a href="#vaccinatie" class="text-primary">Hoe werkt het?</a>
+                <!-- Link naar de sectie op de indexpagina met modal sluit functie -->
+                <a href="#vaccinatie" class="text-primary" data-bs-dismiss="modal">Hoe werkt het?</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
@@ -44,136 +44,136 @@
     </div>
 </div>
 
-    
-    <!-- Header -->
 
-    <header>
-        <div class="row">
-            <nav class="navbar navbar-expand-lg fixed-top border-bottom shadow-sm border border-light bg-light">
-                <div class="container-fluid">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">
-                        <!-- <img src="images/Huisartsenpraktijk-Hoekstra-en-Teuwen.png"
-                            alt="Huisartsenpraktijk Hoekstra en Teuwen" width="30" height="30"
-                            class="d-inline-block align-top"> -->
-                        <p class="d-md-none">Huisartsenpraktijk</br> Hoekstra en Teuwen</p>
-                        <p class="d-none d-md-block">Huisartsenpraktijk Hoekstra en Teuwen</p>
-                    </a>
+<!-- Header -->
 
-                    <!-- Hamburger menu button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top border-bottom shadow-sm border border-light bg-light">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- <img src="images/Huisartsenpraktijk-Hoekstra-en-Teuwen.png"
+                        alt="Huisartsenpraktijk Hoekstra en Teuwen" width="30" height="30"
+                        class="d-inline-block align-top"> -->
+                    <p class="d-md-none">Huisartsenpraktijk</br> Hoekstra en Teuwen</p>
+                    <p class="d-none d-md-block">Huisartsenpraktijk Hoekstra en Teuwen</p>
+                </a>
 
-                    <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto me-5">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Welkom</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="ons-team.html">Ons Team</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="praktische-informatie.html">Praktische informatie</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="nuttige-links.html">Nuttige Links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+                <!-- Hamburger menu button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- Hero Section -->
-
-    <section class="container">
-        <div class="row align-items-center" id="subtext">
-            <div class="col-lg-6 col-md-12">
-                <h2>
-                    Welkom bij de huisartsenpraktijk van dokter Hoekstra en Teuwen
-                </h2>
-                <p class="fs-5">
-                    In onze praktijk kan je terecht voor alle gezondheidsvragen van jong en oud.</br>
-                    Op deze website vind je verdere informatie en kun je een afspraak maken.
-                </p>
-                <div class="d-flex justify-content-start my-4">
-                    <a class="btn btn-primary btn-lg rounded-2 shadow-sm border border-dark"
-                        href="https://doclr.be/hermine-nelissen/patient" target=”_blank”>Maak een
-                        afspraak</a>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Welkom</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="ons-team.html">Ons Team</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="praktische-informatie.html">Praktische informatie</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="nuttige-links.html">Nuttige Links</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-6 py-4 pe-4 d-none d-lg-block align-items-center" id="header-image">
+        </nav>
+    </div>
+</header>
 
+<!-- Hero Section -->
+
+<section class="container">
+    <div class="row align-items-center" id="subtext">
+        <div class="col-lg-6 col-md-12">
+            <h2>
+                Welkom bij de huisartsenpraktijk van dokter Hoekstra en Teuwen
+            </h2>
+            <p class="fs-5">
+                In onze praktijk kan je terecht voor alle gezondheidsvragen van jong en oud.</br>
+                Op deze website vind je verdere informatie en kun je een afspraak maken.
+            </p>
+            <div class="d-flex justify-content-start my-4">
+                <a class="btn btn-primary btn-lg rounded-2 shadow-sm border border-dark"
+                    href="https://doclr.be/hermine-nelissen/patient" target=”_blank”>Maak een
+                    afspraak</a>
             </div>
         </div>
-    </section>
+        <div class="col-lg-6 py-4 pe-4 d-none d-lg-block align-items-center" id="header-image">
 
-    <section class="container my-5">
-        <h2>Ons Team</h2>
-        <div class="row" id="subtext">
-            <div class="col-lg-6 col-md-12 my-3">
-                <h3 class="no-underline">Dokter Anna Hoekstra</h3>
-                <img src="/images/Dokter-Anna-Hoekstra.webp" alt="Dokter Anna Hoekstra"
-                    class="img-fluid float-start me-3 w-25">
-                <p>
-                    Ik ben opgegroeid in Nederland en studeerde geneeskunde aan de Rijksuniversiteit
-                    Groningen. Na enkele jaren op verschillende diensten in Nederlandse ziekenhuizen
-                    te hebben gewerkt, deels in het kader van de opleiding tot arts internationale
-                    gezondheid &amp; tropische geneeskunde, mocht ik voor Artsen Zonder Grenzen gaan
-                    werken.
-                </p>
-                <p>
-                    Ruim vier jaar later ben ik geland in Brussel en daar rondde ik de opleiding
-                    tot huisarts af in januari 2024. Nu kan ik aan boord stappen bij mijn collega dokter
-                    Jan Teuwen, in de praktijk die werd opgebouwd door mijn schoonmoeder, dokter
-                    Hermine Nelissen.
-                </p>
-                <p>
-                    Ik kijk er naar uit kennis te maken!
-                </p>
-                <p>
-                    Consulten zijn mogelijk in Nederlands, Frans en Engels
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-md-12 my-3">
-                <h3 class="no-underline">Dokter Jan Teuwen</h3>
-                <img src="/images/Dokter-Jan-Teuwen.webp" alt="Dokter Jan Teuwen"
-                    class="img-fluid float-start me-3 w-25">
-                <p>
-                    Na enkele jaren werkervaring in Dilsen-Stokkem en Hasselt, werk ik al vanaf 2020 in
-                    Diest.Je kan bij mij terecht voor de algemene huisartsgeneeskunde. Ik ben een
-                    huisarts die geïnteresseerd is in alle aspecten van het vak en zal dan ook voor al je
-                    problemen en probleempjes een oplossing proberen te bieden.
-                </p>
-                <p>
-                    Ik hoop je in de toekomst te verwelkomen.
-                </p>
-                <p>
-                    Met vriendelijke groeten
-                </p>
-                <p>
-                    Dr. Jan Teuwen.
-                </p>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sectie voor Griep- en COVID vaccinatie op de indexpagina -->
+<section class="container my-5">
+    <h2>Ons Team</h2>
+    <div class="row" id="subtext">
+        <div class="col-lg-6 col-md-12 my-3">
+            <h3 class="no-underline">Dokter Anna Hoekstra</h3>
+            <img src="/images/Dokter-Anna-Hoekstra.webp" alt="Dokter Anna Hoekstra"
+                class="img-fluid float-start me-3 w-25">
+            <p>
+                Ik ben opgegroeid in Nederland en studeerde geneeskunde aan de Rijksuniversiteit
+                Groningen. Na enkele jaren op verschillende diensten in Nederlandse ziekenhuizen
+                te hebben gewerkt, deels in het kader van de opleiding tot arts internationale
+                gezondheid &amp; tropische geneeskunde, mocht ik voor Artsen Zonder Grenzen gaan
+                werken.
+            </p>
+            <p>
+                Ruim vier jaar later ben ik geland in Brussel en daar rondde ik de opleiding
+                tot huisarts af in januari 2024. Nu kan ik aan boord stappen bij mijn collega dokter
+                Jan Teuwen, in de praktijk die werd opgebouwd door mijn schoonmoeder, dokter
+                Hermine Nelissen.
+            </p>
+            <p>
+                Ik kijk er naar uit kennis te maken!
+            </p>
+            <p>
+                Consulten zijn mogelijk in Nederlands, Frans en Engels
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 my-3">
+            <h3 class="no-underline">Dokter Jan Teuwen</h3>
+            <img src="/images/Dokter-Jan-Teuwen.webp" alt="Dokter Jan Teuwen"
+                class="img-fluid float-start me-3 w-25">
+            <p>
+                Na enkele jaren werkervaring in Dilsen-Stokkem en Hasselt, werk ik al vanaf 2020 in
+                Diest.Je kan bij mij terecht voor de algemene huisartsgeneeskunde. Ik ben een
+                huisarts die geïnteresseerd is in alle aspecten van het vak en zal dan ook voor al je
+                problemen en probleempjes een oplossing proberen te bieden.
+            </p>
+            <p>
+                Ik hoop je in de toekomst te verwelkomen.
+            </p>
+            <p>
+                Met vriendelijke groeten
+            </p>
+            <p>
+                Dr. Jan Teuwen.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Sectie voor Griep- en COVID vaccinatie op de indexpagina -->
 <section id="vaccinatie" class="container my-5">
-    <h2>Griep- en COVID vaccinatie 2024 praktijk Hoekstra Teuwen</h2>
+    <h2>Griep- en COVID vaccinatie 2024</h2>
     <p>Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren op speciaal daarvoor bestemde momenten tussen 14 en 31 oktober.</p>
     
     <!-- Uitklapbare sectie -->
     <a class="btn btn-link" data-bs-toggle="collapse" href="#vaccinatieInfo" role="button" aria-expanded="false" aria-controls="vaccinatieInfo">
-        Hoe werkt het? <span>&#9660;</span>
+        Hoe werkt het?  <span>&#9660;</span>
     </a>
     <div class="collapse" id="vaccinatieInfo">
         <div class="card card-body">
@@ -202,136 +202,134 @@
     </div>
 </section>
 
+<section class="container my-5">
+<h2>Contact</h2>
+<div class="row" id="subtext">
+    <!-- Address for Small Devices -->
+    <div class="col-md-12 d-lg-none">
+        <h3>Adres:</h3>
+        <p>Guido Gezellestraat 10<br>3290 Diest<br></p>
+    </div>
 
-    <section class="container my-5">
-        <h2>Contact</h2>
-        <div class="row" id="subtext">
-            <!-- Address for Small Devices -->
-            <div class="col-md-12 d-lg-none">
-                <h3>Adres:</h3>
-                <p>Guido Gezellestraat 10<br>3290 Diest<br></p>
-            </div>
+    <!-- Map for Small Devices -->
+    <div class="col-md-12 d-lg-none">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.7265550874686!2d5.050290776470359!3d50.984244771699025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f4d07a3465b%3A0x9ed693b60f55814b!2sGuido%20Gezellestraat%2010%2C%203290%20Diest!5e0!3m2!1snl!2sbe!4v1706356564987!5m2!1snl!2sbe"
+            width="80%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-            <!-- Map for Small Devices -->
-            <div class="col-md-12 d-lg-none">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.7265550874686!2d5.050290776470359!3d50.984244771699025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f4d07a3465b%3A0x9ed693b60f55814b!2sGuido%20Gezellestraat%2010%2C%203290%20Diest!5e0!3m2!1snl!2sbe!4v1706356564987!5m2!1snl!2sbe"
-                    width="80%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <div class="d-none d-lg-block">
-                    <h3>Adres:</h3>
-                    <p>Guido Gezellestraat 10<br>3290 Diest<br></p>
-                </div>
-                <h3 class="mt-5">Bereikbaarheid:</h3>
-                <p>Er is slechts beperkte parkeerruimte aan de praktijk, alternatieven zijn:</p>
-                <ul>
-                    <li>De graanmarkt: Betalend parkeren</li>
-                    <li>De veemarkt: Betalend parkeren</li>
-                    <li>Parking Citadel: Gratis parking, een korte maar pittige wandeling</li>
-                </ul>
-            </div>
-
-            <!-- Map for Large Devices -->
-            <div class=" col-lg-6 d-none d-lg-block">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.7265550874686!2d5.050290776470359!3d50.984244771699025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f4d07a3465b%3A0x9ed693b60f55814b!2sGuido%20Gezellestraat%2010%2C%203290%20Diest!5e0!3m2!1snl!2sbe!4v1706301768598!5m2!1snl!2sbe"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="d-none d-lg-block">
+            <h3>Adres:</h3>
+            <p>Guido Gezellestraat 10<br>3290 Diest<br></p>
         </div>
-    </section>
+        <h3 class="mt-5">Bereikbaarheid:</h3>
+        <p>Er is slechts beperkte parkeerruimte aan de praktijk, alternatieven zijn:</p>
+        <ul>
+            <li>De graanmarkt: Betalend parkeren</li>
+            <li>De veemarkt: Betalend parkeren</li>
+            <li>Parking Citadel: Gratis parking, een korte maar pittige wandeling</li>
+        </ul>
+    </div>  
+        <!-- Map for Large Devices -->
+        <div class=" col-lg-6 d-none d-lg-block">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.7265550874686!2d5.050290776470359!3d50.984244771699025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c13f4d07a3465b%3A0x9ed693b60f55814b!2sGuido%20Gezellestraat%2010%2C%203290%20Diest!5e0!3m2!1snl!2sbe!4v1706301768598!5m2!1snl!2sbe"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+</div>
+</section>
 
-    <!-- Footer Section -->
-    <section id="footer" class="bg-dark text-light">
-        <footer class="container-fluid shadow-lg border-top border-primary mt-5 pt-2">
-            <div class="container">
-                <div class="row d-flex justify-content-between p-4">
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Huisartsenpraktijk Hoekstra en Teuwen</h5>
-                        <p>bereikbaar van maandag tot en met vrijdag tussen 8u en
-                            19u.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Contact</h5>
-                        <p><img class="icon" src="images/home.svg" alt="Home SVG">Guido Gezellestraat 10, 3290
-                            Diest</p>
-                        <p><img class="icon" src="images/mail.svg" alt="Home SVG">praktijkhoekstrateuwen@gmail.com</p>
-                        <p><img class="icon" src="images/call.svg" alt="Call SVG">0468/022697</p>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Links</h5>
-                        <ul class="list-unstyled footer-links">
-                            <li class="nav-item">
-                                <a class="nav-link" href="ons-team.html">Ons team</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="praktische-informatie.html">Praktische
-                                    informatie</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="nuttige-links.html">Nuttige links</a>
-                            </li>
-                        </ul>
-                    </div>
+<!-- Footer Section -->
+<section id="footer" class="bg-dark text-light">
+    <footer class="container-fluid shadow-lg border-top border-primary mt-5 pt-2">
+        <div class="container">
+            <div class="row d-flex justify-content-between p-4">
+                <div class="col-lg-4 col-6">
+                    <h5 class="text-primary">Huisartsenpraktijk Hoekstra en Teuwen</h5>
+                    <p>bereikbaar van maandag tot en met vrijdag tussen 8u en
+                        19u.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <h5 class="text-primary">Contact</h5>
+                    <p><img class="icon" src="images/home.svg" alt="Home SVG">Guido Gezellestraat 10, 3290
+                        Diest</p>
+                    <p><img class="icon" src="images/mail.svg" alt="Home SVG">praktijkhoekstrateuwen@gmail.com</p>
+                    <p><img class="icon" src="images/call.svg" alt="Call SVG">0468/022697</p>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <h5 class="text-primary">Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ons-team.html">Ons team</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="praktische-informatie.html">Praktische
+                                informatie</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="nuttige-links.html">Nuttige links</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </section>
-
-    <!-- Cookie Banner -->
-
-    <!-- <div class=" d-flex align-items-center justify-content-center">
-        <div id="cookie-banner" class="rounded-4 shadow p-4 bg-white bg-opacity-75 w-75">
-            <p>We gebruiken cookies voor functionele en analytische doeleinden.</p>
-            <P>Door op "Alles accepteren" te klikken, gaat u akkoord met het opslaan van cookies
-                op uw apparaat.</P>
-            <button class="btn btn-light" onclick="acceptCookies()">Alles accepteren</button>
         </div>
-    </div> -->
+    </footer>
+</section>
 
-    <!-- 
-    <script async defer
-        src="https://formfacade.com/include/103784533357298304717/form/1FAIpQLSfoG7gD96EcT2dCSNWzJJilXpxSa695O7J3v2RXg8Q5rQp6wQ/clean.js?div=ff-compose">
-    </script> -->
+<!-- Cookie Banner -->
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let prevScrollPos = window.pageYOffset;
+<!-- <div class=" d-flex align-items-center justify-content-center">
+    <div id="cookie-banner" class="rounded-4 shadow p-4 bg-white bg-opacity-75 w-75">
+        <p>We gebruiken cookies voor functionele en analytische doeleinden.</p>
+        <P>Door op "Alles accepteren" te klikken, gaat u akkoord met het opslaan van cookies
+            op uw apparaat.</P>
+        <button class="btn btn-light" onclick="acceptCookies()">Alles accepteren</button>
+    </div>
+</div> -->
 
-            window.onscroll = function () {
-                let currentScrollPos = window.pageYOffset;
-                const navbar = document.querySelector(".navbar");
+<!-- 
+<script async defer
+    src="https://formfacade.com/include/103784533357298304717/form/1FAIpQLSfoG7gD96EcT2dCSNWzJJilXpxSa695O7J3v2RXg8Q5rQp6wQ/clean.js?div=ff-compose">
+</script> -->
 
-                if (currentScrollPos < prevScrollPos) {
-                    navbar.style.top = "0";
-                } else {
-                    // navbar.style.top = "-60px"; // Adjust this value based on the height of your navbar
-                    navbar.style.top = currentScrollPos < prevScrollPos || currentScrollPos < 56 ? "0" : "-60px";
-                }
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let prevScrollPos = window.pageYOffset;
 
-                prevScrollPos = currentScrollPos;
-            };
-        });
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            const navbar = document.querySelector(".navbar");
 
-    </script>
+            if (currentScrollPos < prevScrollPos) {
+                navbar.style.top = "0";
+            } else {
+                // navbar.style.top = "-60px"; // Adjust this value based on the height of your navbar
+                navbar.style.top = currentScrollPos < prevScrollPos || currentScrollPos < 56 ? "0" : "-60px";
+            }
 
-    <script>
-        // JavaScript for handling cookie banner functionality
-        function acceptCookies() {
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-    </script>
+            prevScrollPos = currentScrollPos;
+        };
+    });
 
-        <!-- Script to show the modal on page load -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var myModal = new bootstrap.Modal(document.getElementById('patientStopModal'));
-            myModal.show();
-        });
-    </script>
+</script>
+
+<script>
+    // JavaScript for handling cookie banner functionality
+    function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+
+    <!-- Script to show the modal on page load -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('patientStopModal'));
+        myModal.show();
+    });
+</script>
 
 </body>
 
