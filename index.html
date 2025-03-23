@@ -97,18 +97,18 @@
                 <h2>
                     Welkom bij de huisartsenpraktijk van dokter Hoekstra en Teuwen
                 </h2>
-                <p class="fs-5">
+                <p class="fs-5 pb-3">
                     In onze praktijk kan je terecht voor alle gezondheidsvragen van jong en oud.</br>
                     Op deze website vind je verdere informatie en kun je een afspraak maken.
                 </p>
                 <!-- Uitklapbare sectie met weekschema en afwezigheden -->
-                <a class="btn btn-link p-0 text-decoration-none" data-bs-toggle="collapse" href="#weekschemaInfo"
-                    role="button" aria-expanded="false" aria-controls="weekschemaInfo">
-                    Bekijk ons weekschema en de afwezigheden<span>&#9660;</span>
+                <a class="btn-link text-decoration-none" data-bs-toggle="collapse" href="#weekschemaInfo" role="button"
+                    aria-expanded="false" aria-controls="weekschemaInfo">
+                    Weekschema en afwezigheden<span>&#9660;</span>
                 </a>
-                <div class="collapse my-8" id="weekschemaInfo">
+                <div class="collapse my-5 py-2 px-2  rounded-2 shadow-sm border border-primary" id="weekschemaInfo">
                     <div class="card card-body border-0 p-0">
-                        <h5 class="mt-8">Weekschema</h5>
+                        <h5 class="my-4">Weekschema</h5>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -146,7 +146,7 @@
                             </tbody>
                         </table>
 
-                        <h5>Afwezigheden</h5>
+                        <h5 class="my-4">Afwezigheden</h5>
                         <p><strong>Brugdagen:</strong> 2 mei, 30 mei – U kunt terecht bij de huisartsenwachtpost in
                             Rillaar.</p>
 
@@ -166,7 +166,13 @@
                             <li>12 september - 15 september</li>
                         </ul>
                     </div>
+                    <!-- Sluitknop onderaan -->
+                    <a class="btn btn-link p-0 text-decoration-none mt-3" data-bs-toggle="collapse"
+                        href="#weekschemaInfo" role="button" aria-expanded="true" aria-controls="weekschemaInfo">
+                        Sluiten <span>&#9650;</span>
+                    </a>
                 </div>
+
                 <div class="d-flex justify-content-start my-4">
                     <a class="btn btn-primary btn-lg rounded-2 shadow-sm border border-dark"
                         href="https://doclr.be/hermine-nelissen/patient" target=”_blank”>Maak een
@@ -191,9 +197,9 @@
                     role="button" aria-expanded="false" aria-controls="vaccinatieInfo">
                     Meer info <span>&#9660;</span>
                 </a>
-                <div class="collapse" id="vaccinatieInfo">
-                    <div class="card card-body border-0 p-0">
-                        <h5 class="mt-3">Hoe werkt het?</h5>
+                <div class="collapse shadow-sm border border-primary  my-5 py-2 px-2  rounded-2" id="vaccinatieInfo">
+                    <div class="card card-body border-0 my-3 py-2 px-2">
+                        <h5>Hoe werkt het?</h5>
                         <p>U maakt online een afspraak, type “enkel griep/covid vaccinatie”. Het griepvaccin haalt u
                             tevoren bij de apotheek zonder voorschrift.</p>
                         <p>Het COVID-vaccin hebben wij op voorraad.</p>

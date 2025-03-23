@@ -1,21 +1,33 @@
 {
-  "name": "praktijkhoekstrateuwen",
+  "name": "praktijk-hoekstra-teeuwen",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/pieter-vdr/pieter-vdr.github.io#readme",
-  "bugs": {
-    "url": "https://github.com/pieter-vdr/pieter-vdr.github.io/issues"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/custom.scss:css/custom.css",
+    "serve": "http-server -p 3000",
+    "dev": "concurrently \"npm run scss\" \"browser-sync start --server --files 'index.htm, css/*.css, js/*.js'\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pieter-vdr/pieter-vdr.github.io.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/pieter-vdr/pieter-vdr.github.io/issues"
   },
-  "devDependencies": {}
+  "homepage": "https://github.com/pieter-vdr/pieter-vdr.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.1.2",
+    "http-server": "^14.1.1",
+    "sass": "^1.86.0"
+  }
 }
