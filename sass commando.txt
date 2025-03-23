@@ -1,2 +1,1 @@
 sass --watch scss/custom.scss:css/custom.css
-C:\Users\piete\Desktop\nts466\huisartsenpraktijk-Hoekstra-en-Teuwen
