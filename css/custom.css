@@ -11889,6 +11889,7 @@ h4,
 .h4,
 h5,
 .h5 {
+  margin: 1em 0 0.8em 0;
   color: #3C64B9;
   font-family: "Work Sans", sans-serif;
 }

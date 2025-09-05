@@ -22,33 +22,49 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="patientStopModalLabel">Zomerregeling & Patiëntenstop</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="patientStopModalLabel">Patiëntenstop & Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sluiten"></button>
                 </div>
+
+                <!-- Patiëntenstop -->
                 <div class="modal-body">
-                    <strong>Patiëntenstop:</strong><br>
+                    <h5>Patiëntenstop:</h5>
                     Om goede zorg te kunnen blijven bieden aan onze huidige patiënten, geldt tijdelijk een
                     patiëntenstop.
                     <br><br>
                     Dank voor uw begrip.
                 </div>
+
                 <hr>
+
+                <!-- Feestdagenregeling -->
                 <div class="modal-body">
-                    <strong>Zomerregeling:</strong><br>
-                    Tijdens de zomer zijn we beperkt beschikbaar. Bekijk het weekschema
-                    voor het volledige overzicht.
+                    <h5>Feestdagenregeling:</h5>
+                    Wij maken de brug rond enkele feestdagen. Houd rekening met de volgende sluitingsdagen in
+                    de herfst/winter:
                     <br><br>
-                    • <strong>21 juli:</strong> Feestdag – Wachtpost Rillaar.<br>
-                    • <strong>22-28 juli:</strong> Praktijk gesloten.<br><br>
-                    Voor dringende zorg tijdens deze week:<br>
-                    De Watersnip, Schaluinveld 29 c – 013 22 00 27<br><br>
-                    Voor onze patiënten in Huis August:<br>
-                    praktijkhuis De Wijngaard – 013 30 80 81<br>
-                    Voor onze patiënten in het klooster:<br>
-                    praktijk De Branderij – 013 31 13 37<br><br>
-                    We wensen u een gezonde en mooie zomer!
+                    • <bold>10-11 november:</bold> praktijk gesloten<br>
+                    • <bold>25-26 december:</bold> praktijk gesloten<br>
+                    • <bold>1-2 januari:</bold> praktijk gesloten<br><br>
+                    Op deze dagen is de wachtpost in Rillaar geopend voor dringende zaken.
                 </div>
+
                 <hr>
+
+                <!-- Vaccinatie -->
+                <div class="modal-body">
+                    <h5>Najaarsvaccinatie:</h5>
+                    <p>Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren tussen 13 en 31
+                        oktober.</p>
+                    <a href="javascript:void(0)" onclick="closeModalAndOpenSection()"
+                        class="btn btn-link p-0 text-decoration-none">
+                        Meer info
+                    </a>
+                </div>
+
+                <hr>
+
+                <!-- Sluiten -->
                 <div class="modal-body">
                     <div class="d-flex justify-content-between">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
@@ -57,6 +73,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- Header -->
@@ -201,53 +218,70 @@
     </section>
 
     <!-- Sectie voor Griep- en COVID vaccinatie op de indexpagina -->
-    <!-- <section id="vaccinatie" class="container my-5">
+    <section id="vaccinatie" class="container my-5">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="mb-3">Griep- en COVID vaccinatie 2024 </h2>
+                <h2 class="mb-3">Griep- en COVID vaccinatie 2024</h2>
+                <p>Vaccinaties tegen griep en COVID verkleinen de kans dat je ernstig ziek wordt of in het ziekenhuis
+                    belandt.</p>
                 <p>Dit jaar bieden we de mogelijkheid om tegen COVID en/of griep te vaccineren op speciaal daarvoor
-                    bestemde momenten tussen 14 en 31 oktober.</p>
+                    bestemde momenten tussen <strong>13 en 31 oktober</strong>.
+                </p>
 
                 <a class="btn btn-link p-0 text-decoration-none" data-bs-toggle="collapse" href="#vaccinatieInfo"
                     role="button" aria-expanded="false" aria-controls="vaccinatieInfo">
                     Meer info <span>&#9660;</span>
                 </a>
-                <div class="collapse shadow-sm border border-primary  my-5 py-2 px-2  rounded-2" id="vaccinatieInfo">
+
+                <div class="collapse shadow-sm border border-primary my-5 py-2 px-2 rounded-2" id="vaccinatieInfo">
                     <div class="card card-body border-0 my-3 py-2 px-2">
+
                         <h5>Hoe werkt het?</h5>
-                        <p>U maakt online een afspraak, type “enkel griep/covid vaccinatie”. Het griepvaccin haalt u
-                            tevoren bij de apotheek zonder voorschrift.</p>
-                        <p>Het COVID-vaccin hebben wij op voorraad.</p>
+                        <p>U maakt online een afspraak, type “enkel griep/covid vaccinatie”.</p>
+                        <p>Het griepvaccin haalt u tevoren bij de apotheek zonder voorschrift.</p>
+                        <p>Het COVID-vaccin hebben wij op voorraad en is <strong>gratis</strong>.</p>
                         <p>Na de vaccinatie blijft u een 15-tal minuten in de wachtkamer wachten.</p>
-                        <p>Dit consultatiemoment is niet bedoeld voor het bespreken van klachten/voorschriften/uitslagen
-                            etc.</p>
+                        <p>Dit consultatiemoment is niet bedoeld voor het bespreken van klachten, voorschriften of
+                            uitslagen.</p>
                         <p>Vaccinaties aan huis: ook hiervoor hebben we tijd voorzien. Bel tijdig om dit vast te leggen.
                         </p>
+
                         <h5>Doelgroep COVID en griep vaccinatie:</h5>
                         <ul>
                             <li>65+</li>
-                            <li>Chronische ziekte (long/hart/lever/nierproblemen, suikerziekte, neurologische ziekten,
-                                BMI &gt; 40….)</li>
-                            <li>Verminderde weerstand</li>
-                            <li>Wonende onder hetzelfde dak als patiënten met bovenstaande</li>
-                            <li>Werkzaam in zorgsector</li>
+                            <li>Chronische ziekte (long-, hart-, lever-, nierproblemen, suikerziekte, neurologische
+                                ziekten, BMI &gt; 40…)</li>
+                            <li>Verminderde weerstand, of samenwonend met iemand met verminderde weerstand</li>
+                            <li>Werkzaam in de zorgsector</li>
                         </ul>
-                        <h5>Doelgroep griepvaccinatie:</h5>
+
+                        <h5>Doelgroep enkel griepvaccinatie:</h5>
                         <ul>
                             <li>Zwangeren</li>
-                            <li>Huisgenoten van kindjes &lt;6 maanden</li>
+                            <li>Huisgenoten van kindjes &lt;6 maanden van wie de mama niet is gevaccineerd tegen griep
+                                tijdens de zwangerschap</li>
+                            <li>Wonende onder hetzelfde dak als patiënten met een chronische ziekte (zie boven)</li>
                         </ul>
+
                         <h5>Wist u dat…</h5>
-                        <p>Het is ook mogelijk om u te laten vaccineren (zowel griep als COVID) bij enkele apotheken in
-                            Diest.</p>
-                        <p>Wilt u niet beide vaccins gelijktijdig toegediend krijgen? Zorg dan voor een pauze van 2
-                            weken tussen de twee vaccinaties en begin met de COVID-vaccinatie. De griepvaccinatie wordt
-                            aanbevolen in de periode mid-oktober – eind november 2024.</p>
+                        <p>U kunt zich laten vaccineren (zowel griep als COVID) bij enkele apotheken in Diest.</p>
+                        <p>Wilt u niet beide vaccins gelijktijdig toegediend krijgen? Plan een pauze van 2 weken tussen
+                            de 2 vaccinaties en begin met de COVID-vaccinatie.</p>
+                        <p>De COVID-vaccinatie wordt aanbevolen in de periode <strong>september – oktober</strong>.
+                            De griepvaccinatie wordt aanbevolen in de periode <strong>mid-oktober – eind november
+                                2025</strong>.
+                        </p>
+                        <p>65-plussers mogen zich laten vaccineren met een versterkt griepvaccin op voorschrift. Dit is
+                            beperkt beschikbaar. Contacteer ons als u hier meer over wilt weten.</p>
+                        <p>Er zijn ook vaccins tegen andere luchtweginfecties, zoals <strong>RSV</strong> en
+                            <strong>pneumokokken</strong>. Vraag ons gerust meer informatie.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
 
     <!-- Ons team Sectie -->
     <section class="container my-5">
@@ -436,25 +470,28 @@
             var modal = bootstrap.Modal.getInstance(document.getElementById('patientStopModal'));
             modal.hide();
 
-            // Gebruik een kleine vertraging om de collapse te openen nadat de modal is gesloten
+            // Wacht tot de modal dicht is, dan openen en scrollen
             setTimeout(function () {
                 openVaccinatieInfo();
-            }, 1000); // 300ms vertraging
+            }, 300); // kortere vertraging werkt meestal prima
         }
 
         function openVaccinatieInfo() {
-            // Verwijzing naar de uitklapbare sectie
             var infoSection = document.getElementById('vaccinatieInfo');
 
-            // Controleer of de sectie niet al is geopend
+            // Alleen openen als nog niet open
             if (!infoSection.classList.contains('show')) {
-                // Open de uitklapbare sectie
-                var collapse = new bootstrap.Collapse(infoSection, {
-                    toggle: true
-                });
+                var collapse = new bootstrap.Collapse(infoSection, { toggle: true });
             }
+
+            // Even wachten tot de collapse open is, dan scrollen
+            setTimeout(function () {
+                var offset = infoSection.getBoundingClientRect().top + window.pageYOffset - 100;
+                window.scrollTo({ top: offset, behavior: "smooth" });
+            }, 400); // 400ms = genoeg tijd voor de animatie
         }
     </script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
