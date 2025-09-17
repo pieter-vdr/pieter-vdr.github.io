@@ -148,42 +148,8 @@
     </section>
 
     <!-- Footer Section -->
-    <section id="footer" class="bg-dark text-light">
-        <footer class="container-fluid shadow-lg border-top border-primary mt-5 pt-2">
-            <div class="container">
-                <div class="row d-flex justify-content-between p-4">
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Huisartsenpraktijk Hoekstra en Teuwen</h5>
-                        <p>bereikbaar van maandag tot en met vrijdag tussen 8u en
-                            19u.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Contact</h5>
-                        <p><img class="icon" src="images/home.svg" alt="Home SVG">Guido Gezellestraat 10, 3290
-                            Diest</p>
-                        <p><img class="icon" src="images/mail.svg" alt="Home SVG">praktijkhoekstrateuwen@gmail.com</p>
-                        <p><img class="icon" src="images/call.svg" alt="Call SVG">0468/022697</p>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <h5 class="text-primary">Links</h5>
-                        <ul class="list-unstyled footer-links">
-                            <li class="nav-item">
-                                <a class="nav-link" href="ons-team.html">Ons team</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="praktische-informatie.html">Praktische
-                                    informatie</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="nuttige-links.html">Nuttige links</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
+    <div id="footer-placeholder"></div>
+
 
     <!-- Cookie Banner -->
 
@@ -227,6 +193,17 @@
         function acceptCookies() {
             document.getElementById('cookie-banner').style.display = 'none';
         }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error("Fout bij laden footer:", error));
+        });
     </script>
 
 </body>
